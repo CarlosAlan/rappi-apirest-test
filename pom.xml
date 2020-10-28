@@ -11,7 +11,7 @@
 	</parent>
 
 	<groupId>mx.com.rappi.movie</groupId>
-	<artifactId>rappi-movie-backend</artifactId>
+	<artifactId>rappi-apirest-test</artifactId>
 	<version>1.0.0</version>
 	<name>rappi-restapi-test</name>
 	<description>Application Test for Rappid</description>
