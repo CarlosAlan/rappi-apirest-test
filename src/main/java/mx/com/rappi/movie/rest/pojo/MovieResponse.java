@@ -130,7 +130,7 @@ public class MovieResponse implements Serializable {
 			return this;
 		}
 		
-		public MovieResponse buid() {
+		public MovieResponse build() {
 			MovieResponse response = new MovieResponse();
 			response.imdbId = this.imdbId;
 			response.title = this.title;

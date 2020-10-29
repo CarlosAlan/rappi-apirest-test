@@ -47,7 +47,7 @@ public class MovieService {
 						.setViewDate(entity == null ? new Date() : entity.getViewDate())
 						.setRating(entity == null ? 0L : entity.getRating())
 						.setComments(entity == null ? "" : entity.getComments())
-						.buid();
+						.build();
 	}
 	
 	public void addMovie(MovieEntity entity) {
@@ -78,7 +78,7 @@ public class MovieService {
 						.setViewDate(seenMovie.getViewDate())
 						.setRating(seenMovie.getRating())
 						.setComments(seenMovie.getComments())
-						.buid()
+						.build()
 						);
 		}
 		
