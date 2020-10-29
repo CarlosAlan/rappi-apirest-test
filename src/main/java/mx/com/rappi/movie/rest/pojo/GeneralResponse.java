@@ -35,6 +35,4 @@ public class GeneralResponse implements Serializable{
 		this.content = content;
 	}
 	
-	
-	
 }

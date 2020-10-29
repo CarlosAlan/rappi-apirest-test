@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
 @ComponentScan
-@EnableJpaRepositories(basePackages = "mx.com.rappi.movie.repository")
+@EnableJpaRepositories
 public class RestApplication {
 
 	public static void main(String[] args) {

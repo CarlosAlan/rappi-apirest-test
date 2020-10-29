@@ -17,7 +17,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 
 import mx.com.rappi.movie.rest.dto.MovieEntity;
 import mx.com.rappi.movie.rest.pojo.GeneralResponse;
-import mx.com.rappi.movie.rest.pojo.OmdbMovieResponse;
+import mx.com.rappi.movie.rest.pojo.MovieResponse;
 import mx.com.rappi.movie.rest.service.MovieService;
 
 @RestController
@@ -33,12 +33,12 @@ public class MovieController {
 	}
 	
 	@GetMapping("/find/{title}")
-	public OmdbMovieResponse movie(@PathVariable(value = "title") String request) {
+	public MovieResponse movie(@PathVariable(value = "title") String request) {
 		return service.getMovieByTitle(request);
 	}
 	
 	@GetMapping("/all")
-	public List<MovieEntity> getAllMoviesSeen(){
+	public List<MovieResponse> getAllMoviesSeen(){
 		return service.allMovies();
 	}
 	
@@ -58,6 +58,5 @@ public class MovieController {
 	public GeneralResponse updateMovie(@Validated @RequestBody MovieEntity request) {
 		service.updateMovie(request);
 		return new GeneralResponse("OK", "Successful operation");
-		
 	}
 }
